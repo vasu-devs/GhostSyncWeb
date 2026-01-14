@@ -4,168 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GHOST SYNC | DAYDREAM LAZY</title>
+    <title>GhostSync | Supreme Laziness</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Sniglet:wght@400;800&family=Architects+Daughter&family=Gloria+Hallelujah&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand:wght@400;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (using the ghost logo if available, else generic) -->
+    <link rel="icon" type="image/png" href="assets/ghost-logo.png">
 </head>
 
 <body>
-    <div id="ink-cursor"></div>
-    <div id="ink-shadow"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
 
-    <div class="daydream-marquee" id="breeze-text">
-        SHEET HAPPENS. WE SYNC IT. // GRAVELY PRODUCTIVE // BOO-ST YOUR WORKFLOW // A HAUNTINGLY SMOOTH EXPERIENCE //
-        DON'T BE A GHOUL, SYNC YOUR FILES
-    </div>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <img src="assets/ghost-logo.png" alt="GhostSync Logo" class="logo-img">
+            <span class="logo-text">GhostSync</span>
+        </div>
+        <a href="GhostSync.exe" download class="nav-btn">Get It Now</a>
+    </nav>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero">
-            <div class="hero-content">
-                <h1>The <span>Daydream</span><br>Ghost.</h1>
-                <p class="daydream-p">Heavy engineering is for the past. Ghost Sync is spook-tacularly lightweight.
-                    Experience the breezy bridge between your sofa and the abyss. The art of non-effort.</p>
-                <div class="pun-tag">"Gravely efficient."</div>
-                <a href="#about" class="btn-daydream">Float Down</a>
-                <div class="hand-arrow">
-                    <svg viewBox="0 0 100 100" width="80" height="80">
-                        <path d="M20,80 Q50,20 80,40 M80,40 L70,30 M80,40 L65,55" fill="none" stroke="currentColor"
-                            stroke-width="4" stroke-linecap="round" />
-                    </svg>
+            <div class="hero-text">
+                <h1 class="fade-in">Lazy is the new <span class="highlight">Productive</span>.</h1>
+                <p class="fade-in">Why move when you can ghost? GhostSync bridges your sofa to your IDE. Control
+                    Antigravity remotely, because standing up is overrated.</p>
+                <div class="hero-actions fade-in">
+                    <a href="GhostSync.exe" download class="btn-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download for Windows
+                    </a>
+                    <span class="sub-text">v1.0.0 • 0% Effort Required</span>
                 </div>
             </div>
-            <div class="hero-media daydream-asset">
-                <img src="assets/daydream-hero.png" style="width: 100%;" alt="Daydream Ghost">
+            <div class="hero-image fade-in">
+                <!-- Custom SVG Hero: Zen Coder Abstract -->
+                <svg viewBox="0 0 200 200" class="floating-dude"
+                    style="width: 100%; max-width: 500px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
+                    <!-- Abstract Levitating Figure -->
+                    <path d="M100,50 Q120,50 120,70 Q120,90 100,90 Q80,90 80,70 Q80,50 100,50 Z" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                    <path d="M100,90 Q140,100 130,140 L140,160 M100,90 Q60,100 70,140 L60,160" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                    <path d="M70,140 Q100,160 130,140" fill="none" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" />
+                    <!-- Floating Tech Elements -->
+                    <rect x="50" y="40" width="20" height="20" rx="5" fill="none" stroke="var(--accent-orange)"
+                        stroke-width="2" transform="rotate(-15 60 50)" />
+                    <circle cx="150" cy="60" r="10" fill="none" stroke="var(--accent-orange)" stroke-width="2" />
+                    <path d="M40,120 L60,140 L40,160" fill="none" stroke="var(--accent-orange)" stroke-width="2" />
+                </svg>
+                <div class="blob-bg"></div>
             </div>
         </section>
 
-        <section id="about">
-            <div class="daydream-box">
-                <h2>Breezy Logic.</h2>
-                <p class="daydream-p" style="max-width: none;">Why lift fingers when you can drift? Ghost Sync
-                    multiplexes your intentions directly into Antigravity. Syncing your world while you simply exist.
-                    It's that easy.</p>
-            </div>
-            <div style="position: absolute; right: 2rem; bottom: 0; width: 30vw;" class="daydream-asset">
-                <img src="assets/daydream-items.png" style="width: 100%;" alt="Daydream Doodles">
-            </div>
-        </section>
+        <!-- Philosophy Section -->
+        <section id="philosophy">
+            <div class="content-wrapper">
+                <h2 class="section-title">The Art of <span class="highlight">Doing Nothing</span></h2>
+                <p class="section-desc">We engineered a tool so complex, just so you can be simple. It's the paradox of
+                    extreme engineering for extreme lethargy.</p>
 
-        <section id="features">
-            <div class="breezy-grid">
-                <div class="breezy-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 100 100" width="60" height="60">
-                            <path
-                                d="M25,60 Q20,60 20,50 Q20,35 40,35 Q40,20 60,20 Q80,20 80,40 Q90,40 90,55 Q90,70 75,70 L25,70"
-                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                        </svg>
+                <div class="grid-features">
+                    <!-- Card 1 -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17.5 19c0-5-2.5-12-9-13"></path>
+                                <path d="M11.5 12.3c.4.6.8.8 1.5.7.6 0 1.2-.2 1.5-.7"></path>
+                                <path d="M1.8 22l.6-2c.9-2.7.9-5.4 0-8.1L2 11a8.8 8.8 0 0 1 7-7.2 9 9 0 0 1 8 1.1">
+                                </path>
+                                <path d="M18 14h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1"></path>
+                            </svg>
+                        </div>
+                        <h3>Remote Vibe</h3>
+                        <p>Text your code. From bed. From the fridge. From the bathroom. We don't judge.</p>
                     </div>
-                    <h3>AIR SYNC</h3>
-                    <p>Weightless file transfers. They float from host to abyss without a sound. No strings attached.
+
+                    <!-- Card 2 -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </div>
+                        <h3>Antigravity</h3>
+                        <p>Fully integrated with Antigravity agent. It does the heavy lifting, you provide the vibes.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                        </div>
+                        <h3>Instant Sync</h3>
+                        <p>Changes appear instantly. Faster than you can think of an excuse to not work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT: The Ghost Bridge -->
+        <section id="what-bridge" class="content-section">
+            <div class="split-layout">
+                <div class="text-content">
+                    <span class="eyebrow">The What</span>
+                    <h2 class="section-title">The <span class="highlight">Ghost Bridge</span></h2>
+                    <p class="section-desc-left">
+                        GhostSync is a spectral tether. It runs quietly on your host machine and listens for your
+                        commands from the ether (Telegram).
                     </p>
-                    <div class="card-pun">"Simply sub-lime."</div>
+                    <p class="section-desc-left">
+                        You talk to the bot; the bot pilots Antigravity. It's remote desktop, but for ideas, not just
+                        pixels.
+                        No laggy screensharing. Just pure, text-based intent transmission.
+                    </p>
                 </div>
-                <div class="breezy-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 100 100" width="60" height="60">
-                            <path d="M50,10 L55,40 L85,45 L55,50 L50,80 L45,50 L15,45 L45,40 Z" fill="none"
-                                stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                            <circle cx="20" cy="20" r="2" fill="currentColor" />
-                            <circle cx="80" cy="70" r="2" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <h3>SPIRIT MODE</h3>
-                    <p>A high-contrast, breezy UI for engineers who dream in the sun. Transparency is our soul.</p>
-                    <div class="card-pun">"I can see right through it."</div>
-                </div>
-                <div class="breezy-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 100 100" width="60" height="60">
-                            <path d="M30,40 L70,40 L70,70 Q70,85 50,85 Q30,85 30,70 Z M70,50 Q85,50 85,60 Q85,70 70,70"
-                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                            <path d="M40,20 Q45,10 40,5 M50,20 Q55,10 50,5 M60,20 Q65,10 60,5" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>REST IN PEACE</h3>
-                    <p>The legendary goal of 0% physical movement. Let your thoughts do the syncing while you nap.</p>
-                    <div class="card-pun">"Dead easy setup."</div>
+                <div class="visual-content placeholder-box">
+                    <!-- CSS Abstract Art -->
+                    <div class="abstract-circle"></div>
+                    <div class="abstract-line"></div>
+                    <div class="code-bubble">"Fix the bug..."</div>
+                    <div class="response-bubble">"Done."</div>
                 </div>
             </div>
         </section>
 
-        <section id="spirit-board">
-            <h2 class="section-title">The Spirit Board.</h2>
-            <div class="spirit-grid">
-                <div class="spirit-item">
-                    <span class="spirit-emoji">
-                        <svg viewBox="0 0 100 100" width="50" height="50">
-                            <path d="M30,80 Q30,20 50,20 Q70,20 70,80 Q60,70 50,80 Q40,70 30,80 Z" fill="none"
-                                stroke="currentColor" stroke-width="3" />
-                            <circle cx="40" cy="45" r="3" fill="currentColor" />
-                            <circle cx="60" cy="45" r="3" fill="currentColor" />
-                        </svg>
-                    </span>
-                    <div class="spirit-note">"I'm here for the boos."</div>
+        <!-- WHY: The Sofa Manifesto -->
+        <section id="why-sofa" class="content-section alt-bg">
+            <div class="content-wrapper">
+                <span class="eyebrow centered">The Why</span>
+                <h2 class="section-title">The <span class="highlight">Sofa Manifesto</span></h2>
+                <div class="manifesto-grid">
+                    <div class="manifesto-item">
+                        <h3>Ergonomics</h3>
+                        <p>Desks are prisons. Couches are clouds. Your best code happens when your spine is liquid.</p>
+                    </div>
+                    <div class="manifesto-item">
+                        <h3>Focus</h3>
+                        <p>Type with your thumbs, think with your brain. Detach from the syntax and flow with the logic.
+                        </p>
+                    </div>
+                    <div class="manifesto-item">
+                        <h3>Freedom</h3>
+                        <p>Code from the kitchen. Code from the bath (safely). We don't care. Just don't sit in a chair.
+                        </p>
+                    </div>
                 </div>
-                <div class="spirit-item">
-                    <span class="spirit-emoji">
-                        <svg viewBox="0 0 100 100" width="50" height="50">
-                            <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="currentColor"
-                                stroke-width="3" />
-                            <path d="M30,45 Q50,20 70,45" fill="none" stroke="currentColor" stroke-width="3" />
-                        </svg>
-                    </span>
-                    <div class="spirit-note">"Out of this world sync."</div>
-                </div>
-                <div class="spirit-item">
-                    <span class="spirit-emoji">
-                        <svg viewBox="0 0 100 100" width="50" height="50">
-                            <path d="M40,80 L60,80 L60,40 L40,40 Z" fill="none" stroke="currentColor"
-                                stroke-width="3" />
-                            <path d="M50,40 Q55,25 50,15 Q45,25 50,40 Z" fill="orange" />
-                        </svg>
-                    </span>
-                    <div class="spirit-note">"Keeping the light on."</div>
-                </div>
-                <div class="spirit-item">
-                    <span class="spirit-emoji">
-                        <svg viewBox="0 0 100 100" width="50" height="50">
-                            <path d="M20,60 Q50,90 80,60 L80,40 Q50,10 20,40 Z" fill="none" stroke="currentColor"
-                                stroke-width="3" />
-                            <circle cx="50" cy="50" r="5" fill="pink" />
-                        </svg>
-                    </span>
-                    <div class="spirit-note">"Ghostly sweet."</div>
-                </div>
-            </div>
-            <div class="custom-doodle-container">
-                <div class="doodle-blob blob-1"></div>
-                <div class="doodle-blob blob-2"></div>
-                <div class="doodle-blob blob-3"></div>
             </div>
         </section>
 
-        <section id="deploy" style="text-align: center;">
-            <h1 style="font-size: 15vw; color: var(--dusty-rose);">DRIFT.</h1>
-            <p class="daydream-p" style="margin: 3rem auto;">The download is weightless. Grab it when the clouds align.
-            </p>
-            <a href="GhostSync.exe" download class="btn-daydream">Grab the Cloud</a>
+        <!-- HOW: 3 Steps -->
+        <section id="how-steps" class="content-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">3 Steps to <span class="highlight">Ascension</span></h2>
+                <div class="timeline-steps">
+                    <div class="step-card fade-in-step">
+                        <div class="step-number">01</div>
+                        <h3>Summon</h3>
+                        <p>Download `GhostSync.exe`. Run it. It sits in your tray, haunting your RAM efficiently.</p>
+                    </div>
+                    <div class="step-card fade-in-step">
+                        <div class="step-number">02</div>
+                        <h3>Connect</h3>
+                        <p>Ping your Telegram Bot. A spiritual handshake occurs. You are now linked.</p>
+                    </div>
+                    <div class="step-card fade-in-step">
+                        <div class="step-number">03</div>
+                        <h3>Haunt</h3>
+                        <p>Send commands. "Refactor this", "Create that". Watch your IDE obey from another room.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USE CASES: Application -->
+        <section id="use-cases" class="content-section alt-bg">
+            <div class="content-wrapper">
+                <h2 class="section-title">Vibe Scenarios</h2>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </div>
+                        <h3>The 3AM Epiphany</h3>
+                        <p>You're in bed. The idea strikes. Don't get up. Just text the ghost.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <h3>The Coffee Shop Pretender</h3>
+                        <p>Look like you're texting friends. Actually shipping production code.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <path d="M6 12h4m-2-2v4"></path>
+                                <line x1="15" y1="11" x2="15" y2="11"></line>
+                                <line x1="18" y1="13" x2="18" y2="13"></line>
+                            </svg>
+                        </div>
+                        <h3>The Gaming Alt-Tab</h3>
+                        <p>In queue for a match? Fix that lint error before the round starts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="footer-cta">
+            <h2 class="large-text">Ready to <br>Ghost?</h2>
+            <a href="GhostSync.exe" download class="btn-primary big-btn">Start Floating</a>
         </section>
     </main>
 
-    <footer style="padding: 10vh; text-align: center; opacity: 0.2; font-family: var(--font-hand);">
-        <p>GHOST SYNC // BREEZY PHANTOM LABS // 2026</p>
+    <footer>
+        <p>© 2026 GhostSync. Made with heavy eyelids.</p>
     </footer>
 
-    <!-- GSAP & Plugins -->
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
